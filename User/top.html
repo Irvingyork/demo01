@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>顶部</title>
+    <link href="../css/userindex.css" rel="stylesheet" type="text/css">
+</head>
+<body  bgcolor="#F5F5F5">
+<div id="logo" align="center">
+    <img src="../images/logo.png" align="center">
+</div>
+    <div id="tcontent">
+        <ul style="text-decoration: none">
+            <li style="text-decoration: none">
+                <a href="index.html" target="_parent"><img src="../images/img47.png"width="100px"height="30px"></a>
+            </li>
+            <li><a href="UserInf.html" target="cframe"><img src="../images/img41.png"width="100px"height="30px"></a>
+                <ul style="background-color: #F3F3F3;text-decoration: none">
+                    <li style="text-decoration: none"><a href="UserInf.html" target="cframe">查看个人信息</a></li>
+                    <li><a href="UpdateUserInf.html" target="cframe">修改个人信息</a></li>
+                    <li><a href="UpdatePassword.html" target="cframe">修改个人密码</a></li>
+                </ul>
+            </li>
+            <li><a href="CheckRoomInf.html" target="cframe"><img src="../images/img42.png"width="100px"height="30px"></a>
+                <ul style="background-color: #F3F3F3">
+                    <li><a href="CheckRoomInf.html" target="cframe">查看房间信息</a></li>
+                    <li><a href="ParkingSpace.html" target="cframe">租用车位</a></li>
+                    <li><a href="Repair.html" target="cframe">报修</a></li>
+                </ul>
+            </li>
+            <li><a href="WaterRent.html" target="cframe"><img src="../images/img43.png"width="100px"height="30px"></a>
+                <ul style="background-color: #F3F3F3">
+                    <li><a href="WaterRent.html" target="cframe">缴纳水费</a></li>
+                    <li><a href="PowerRent.html" target="cframe">缴纳电费</a></li>
+                    <li><a href="ParkingRent.html" target="cframe">缴纳车位费</a></li>
+                </ul>
+            </li>
+            <li><a href="Notice.html" target="cframe"><img src="../images/img45.png"width="100px"height="30px"></a>
+            </li>
+            <li><a href="Complain.html" target="cframe"><img src="../images/img46.png"width="100px"height="30px">   </a>
+            </li>
+        </ul>
+    </div>
+<SCRIPT type=text/javascript>
+    function menuFix() {
+        var sfEls = document.getElementById("tcontent").getElementsByTagName("li");
+        for (var i=0; i<sfEls.length; i++) {
+            sfEls[i].onmouseover=function() {
+                this.className+=(this.className.length>0? " ": "") + "sfhover";
+            }
+            sfEls[i].onMouseDown=function() {
+                this.className+=(this.className.length>0? " ": "") + "sfhover";
+            }
+            sfEls[i].onMouseUp=function() {
+                this.className+=(this.className.length>0? " ": "") + "sfhover";
+            }
+            sfEls[i].onmouseout=function() {
+                this.className=this.className.replace(new RegExp("( ?|^)sfhover\\b"),
+                    "");
+            }
+        }
+    }
+    window.onload=menuFix;
+</SCRIPT>
+</body>
+</html>

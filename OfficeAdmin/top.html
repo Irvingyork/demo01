@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>顶部</title>
+    <link href="../css/oacss.css" rel="stylesheet" type="text/css">
+</head>
+<body bgcolor="#F5F5F5">
+<div id="logo" align="center">
+    <img src="../images/logo.png" align="center">
+</div>
+    <div id="tcontent">
+        <ul>
+            <li>
+                <a href="index.html" target="_parent"><img src="../images/img47.png"width="100px"height="30px"></a>
+            </li>
+            <li><a href="UserInf.html" target="security"><img src="../images/img52.png"width="100px"height="30px"></a>
+                <ul style="background-color: #F3F3F3">
+                    <li><a href="AddUserInf.html" target="security">用户登记</a></li>
+                    <li><a href="UserInf.html" target="security">查看用户信息</a></li>
+                    <li><a href="UpdateUserInf.html" target="security">修改用户信息</a></li>
+                    <li><a href="UpdatePassword.html" target="security">删除用户信息</a></li>
+                    <li><a href="UpdatePassword.html" target="security">修改用户密码</a></li>
+                </ul>
+            </li>
+            <li><a href="CheckRoomInf.html" target="security"><img src="../images/img53.png"width="100px"height="30px"></a>
+                <ul style="background-color: #F3F3F3">
+                    <li><a href="CheckRoomInf.html" target="security">查看房间信息</a></li>
+                    <li><a href="UpdateRoomInf.html" target="security">修改房间信息</a></li>
+                </ul>
+            </li>
+            <li><a href="SetWEfee.html" target="security"><img src="../images/img55.png"width="100px"height="30px"></a>
+                <ul style="background-color: #F3F3F3">
+                    <li><a href="SetWEfee.html" target="security">设置水电费</a></li>
+                </ul>
+            </li>
+            <li><a href="AddNotice.html" target="security"><img src="../images/img56.png"width="100px"height="30px"></a>
+                <ul style="background-color: #F3F3F3">
+                    <li><a href="AddNotice.html" target="security">添加公告信息</a></li>
+                    <li><a href="CheckNotice.html" target="security">查看公告信息</a></li>
+                </ul>
+            </li>
+            <li><a href="ParkingSpace.html" target="security"><img src="../images/img57.png"width="100px"height="30px"></a>
+                <ul style="background-color: #F3F3F3">
+                    <li><a href="ParkingSpace.html" target="security">查看车位信息</a></li>
+                    <li><a href="SetParkingFee.html" target="security">设置车位价格</a></li>
+                    <li><a href="UpadteParkingInf.html" target="security">租车申请审批</a></li>
+                </ul>
+            </li>
+            <li><a href="CheckComplain.html" target="security"><img src="../images/img58.png"width="100px"height="30px"></a>
+                <ul style="background-color: #F3F3F3">
+                    <li><a href="CheckComplain.html" target="security">查看投诉信息</a></li>
+                </ul>
+            </li>
+            <li><a href="CheckRepairInf.html" target="security"><img src="../images/img59.png"width="100px"height="30px"></a>
+                <ul style="background-color: #F3F3F3">
+                    <li><a href="CheckRepairInf.html" target="security">查看维修信息</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+<SCRIPT type=text/javascript>
+    function menuFix() {
+        var sfEls = document.getElementById("tcontent").getElementsByTagName("li");
+        for (var i=0; i<sfEls.length; i++) {
+            sfEls[i].onmouseover=function() {
+                this.className+=(this.className.length>0? " ": "") + "sfhover";
+            }
+            sfEls[i].onMouseDown=function() {
+                this.className+=(this.className.length>0? " ": "") + "sfhover";
+            }
+            sfEls[i].onMouseUp=function() {
+                this.className+=(this.className.length>0? " ": "") + "sfhover";
+            }
+            sfEls[i].onmouseout=function() {
+                this.className=this.className.replace(new RegExp("( ?|^)sfhover\\b"),
+                    "");
+            }
+        }
+    }
+    window.onload=menuFix;
+</SCRIPT>
+</body>
+</html>
